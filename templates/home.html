@@ -4,9 +4,25 @@
 <div class="continer">
     <h1 class="display-1">Cupcakes</h1>
     <main class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4"></div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 list" style="display: flex;"></div>
+        <section id="form" style="display: none;">
+            <div class="container border mt-3">
+                <h2 class="display-2">Add Cupcake</h2>
+                <form id="frm">
+                    <labe for='flavor'>Flavor</labe>
+                    <input class="form-control" type="text" id="flavor" placeholder="Enter the flavor" required>
+                    <label for="size">Size</label>
+                    <input class="form-control" type="text" id="size" placeholder="Enter the size" required>
+                    <label for="image">Image Url</label>
+                    <input class="form-control" type="text" id="image" placeholder="Enter the image url">
+                    <label for="rating">Rating</label>
+                    <input class="form-control" type="number" id="rating" placeholder="Enter the rating" required>
+                    <button class="btn btn-success add mt-3" type="submit">ADD</button>
+                </form>
+            </div>
+        </section>
+        <a class="btn btn-outline-success mt-3 addform" type="button">Add Cupcakes</a>
 
-        <button class="btn btn-outline-success mt-3">Add Cupcakes</button>
     </main>
 </div>
 {% endblock %}

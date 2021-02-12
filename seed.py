@@ -17,6 +17,11 @@ c2 = Cupcake(
     rating=9,
     image="https://www.bakedbyrachel.com/wp-content/uploads/2018/01/chocolatecupcakesccfrosting1_bakedbyrachel.jpg"
 )
+c3 = Cupcake(
+    flavor="vanilia",
+    size="large",
+    rating=5,
+)
 
-db.session.add_all([c1, c2])
+db.session.add_all([c1, c2, c3])
 db.session.commit()
